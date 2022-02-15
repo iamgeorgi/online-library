@@ -1,0 +1,71 @@
+.wrapper {
+    background: #ffff;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.22);
+    border-radius: 0 0 30px 30px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 50px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.left-top-section{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.search-bar{
+    margin-left: 30px;
+    width: 300px;
+    background: #efeff0;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    outline: none;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.18);
+}
+
+.header-buttons {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 0.8rem;
+    padding: 5px 15px;
+    background-color: #00587a;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.18);
+}
+
+.right-top-section{
+    display: flex;
+    align-items: center;
+}
+
+.username{
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* .logout{
+    font-size: 0.8rem;
+    color: brown;
+    text-decoration: underline;
+    margin-left: 20px;
+} */
+
+/* .logout:hover{
+    cursor: pointer;
+} */

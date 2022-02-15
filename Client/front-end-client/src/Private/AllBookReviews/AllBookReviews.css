@@ -1,0 +1,121 @@
+.reviewed-book {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    margin-left: 50px;
+    background: #efeff0;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.18);
+
+}
+
+.book-image {
+    width: 100px;
+    max-height: 80%;
+    border-radius:10px;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.18);
+    cursor: pointer;
+}
+
+.book-info-section {
+    font-size: 0.8rem;
+    color: #393e46;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+
+.review-section{
+    padding: 30px;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.18);
+}
+
+.text-area {
+    display: flex;
+    align-items: center;
+}
+
+#reviews-title {
+    text-align: center;
+    color: #393e46;
+    margin-bottom: 15px;
+}
+
+.create-review-input {
+    padding: 10px;
+    background: center center no-repeat #fcfcfc;
+    color: #393e46;
+    outline: none;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.18);
+}
+
+.review-text {
+    padding: 10px;
+    background: center center no-repeat #fcfcfc;
+    color: #393e46;
+    outline: none;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.18);
+}
+
+.review-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.review-button {
+    font-size: 0.6rem;
+    padding: 7px 15px;
+    background-color: #00587a;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.18);
+}
+
+.delete-button {
+    margin-left: 5px;
+    font-size: 0.6rem;
+    padding: 7px 15px;
+    background-color: #00587a;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.18);
+}
+
+.all-reviews{
+    margin-top: 30px;
+    font-size: 0.7rem;
+    font-style: italic;
+    font-weight: 200;
+    padding-bottom: 7px;
+}
+
+.input-text {
+    width: 100%;
+    margin-top: 0;
+    /* padding: 10px; */
+    /* background: center center no-repeat; */
+    color: #393e46;
+    background: none;
+    outline: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}

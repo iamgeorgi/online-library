@@ -1,0 +1,75 @@
+div.register {
+    width: 600px;
+    background-color:#ffffff;
+    height: 400px;
+    margin: 0 auto;
+    position: absolute;
+    top: 320px;
+    left: 660px;
+    box-shadow: 26px 24px 58px -46px rgba(0,0,0,0.84);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register h3 {
+    font-weight: 300;
+    color: #808994;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+form.register {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px;
+}
+
+input {
+    margin-top: 8px;
+    padding: 10px;
+    font-size: 0.7rem;
+    font-weight: 300;
+    border-radius: 5px;
+    border: 2px solid #DFDFE0;
+    background-color: #EEEFF1;
+}
+
+input[type="text"] {
+    border: 2px solid #DFDFE0;
+}
+
+input[type="email"] {
+    border: 2px solid #DFDFE0;
+}
+
+.action{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    margin-top: 20px;
+}
+.reg-action {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 10px 23px;
+    background-color: #6BB26C;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.reg-action:hover{
+    cursor: pointer;
+}
+
+.login-action {
+    font-size: 0.7rem;
+  
+    text-decoration: underline;
+}
+
+.login-action:hover{
+    cursor: pointer;
+}

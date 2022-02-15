@@ -1,0 +1,40 @@
+{
+  "name": "tsl",
+  "version": "1.0.0",
+  "description": "Super-library-four-our-client",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "start:dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/georgipetrov/telerik-super-library.git"
+  },
+  "author": "Georgi & Niki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/georgipetrov/telerik-super-library/issues"
+  },
+  "homepage": "https://gitlab.com/georgipetrov/telerik-super-library#readme",
+  "dependencies": {
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/nodemon": "^1.19.0",
+    "@types/passport-jwt": "^3.0.3",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.1",
+    "helmet": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "mariadb": "^2.4.2",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
+  }
+}

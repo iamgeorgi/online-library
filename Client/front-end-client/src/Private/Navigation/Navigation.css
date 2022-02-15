@@ -1,0 +1,38 @@
+.navigation{
+    width: 15%;
+}
+
+.navigation h1 {
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    padding: 5px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.navigation ul li {
+    text-decoration: none;
+    margin-bottom: 14px;
+    font-size: 0.8rem;
+    padding: 10px;
+    background-color: #00587a;
+    border-radius: 8px;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.18);
+    outline: none;
+}
+
+.navigation-links {
+    text-decoration: none;
+    color: #ffffff;
+    border: none;
+    font-size: 0.8rem;
+    padding: 5px 50px 5px 10px;
+    cursor: pointer;
+}
+
+/* .navigation ul li:hover { */
+    /* background: #F6F6F6; */
+/* } */
