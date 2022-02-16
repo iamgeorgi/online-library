@@ -67,7 +67,7 @@ const Header = (props) => {
                         <button className="header-buttons" onClick={() => handleSearch(search)}>Search</button>
                     </div>
                     <div className="right-top-section">
-                        <p className="username">Welcome, {user.username}</p>
+                        <p className="username">Welcome, {user && user.username ? user.username : 'User'}</p>
                         <button className="header-buttons" onClick={logOut}>Logout</button>
                     </div>
                 </div>

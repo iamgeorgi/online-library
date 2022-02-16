@@ -24,7 +24,7 @@ const App = () => {
     <div>
       <AuthContext.Provider value={{ user: user, setUser: setUser }} >
         <BrowserRouter>
-          {user
+          {true
             ?
             <>
               <Header sendData={data => setSearchData(data)} searchInput={(input => setSearchInput(input))} />
