@@ -3,12 +3,13 @@ import './MainView.css';
 import ratingStar from '../../media/rating-star.svg';
 import Loading from '../Loading/Loading';
 import { withResource } from '../../Hooks/withResource';
+import { BookItem } from './BookItem';
 
 const MainView = withResource(({ books1 }) => {
     console.log('books1', books1);
     // const { books } = books1;
     // const [allBooks, setBooks] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     const token = localStorage.getItem('token');
     // const redirect = (id) => props.history.push(`/library/books/${id}`);
 
@@ -31,74 +32,21 @@ const MainView = withResource(({ books1 }) => {
     }
 
     return (
-        <>
-            <section>
-                {books.length === 0
-                    ?
-                    <h1>There are no books in the library.</h1>
-                    :
-                    <>
-                        {false
-                            ?
-                            <>
-                                {false
-                                    ?
-                                    <div className="not-found-book">
-                                        <h2>Book with name does not exist in the library... </h2>
-                                    </div>
-                                    :
-                                    <>
-                                        {/* {
-                                            props.dataFromSearch.map((book) => {
-                                                return (
-                                                    <div className="single-book" key={book.id}>
-                                                        <img src={book.img} className="book" onClick={() => redirect(book.id)} alt={book.title}></img>
-                                                        <h3>{book.title}</h3>
-                                                        <p>{book.author}</p>
-                                                        <div className="rating-stars">
-                                                            <img src={ratingStar} className=" rating rating-1" alt="rating-star"></img>
-                                                            <img src={ratingStar} className=" rating rating-2" alt="rating-star"></img>
-                                                            <img src={ratingStar} className=" rating rating-3" alt="rating-star"></img>
-                                                            <img src={ratingStar} className=" rating rating-4" alt="rating-star"></img>
-                                                            <img src={ratingStar} className=" rating rating-5" alt="rating-star"></img>
-                                                        </div>
-                                                    </div>
-                                                );
-                                            })
-                                        } */}
-                                    </>
-                                }
-                            </>
-                            :
-                            <>
-                                {
-                                    books.map((book) => {
-                                        return (
-                                            <div className="single-book" key={book.id}>
-                                                <img 
-                                                    src={book.img} 
-                                                    className="book" 
-                                                    // onClick={() => redirect(book.id)} 
-                                                    alt={book.title}></img>
-                                                <h3>{book.title}</h3>
-                                                <p>{book.author}</p>
-                                                <div className="rating-stars">
-                                                    <img src={ratingStar} className=" rating rating-1" alt="rating-star"></img>
-                                                    <img src={ratingStar} className=" rating rating-2" alt="rating-star"></img>
-                                                    <img src={ratingStar} className=" rating rating-3" alt="rating-star"></img>
-                                                    <img src={ratingStar} className=" rating rating-4" alt="rating-star"></img>
-                                                    <img src={ratingStar} className=" rating rating-5" alt="rating-star"></img>
-                                                </div>
-                                            </div>
-                                        );
-                                    })
-                                }
-                            </>
-                        }
-                    </>
+        <section>
+
+            <>
+            <div className="wrapper">
+                {
+                    books1 && books1.books.map((book) => {
+                        console.log('book', book);
+                        return (
+                                <BookItem currentBook={book} />
+                        );
+                    })
                 }
-            </section>
-        </>
+            </div>
+            </>
+        </section >
     );
 }, 'https://api.itbook.store/1.0/new', 'books1');
 
