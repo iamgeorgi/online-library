@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import '../MainView/MainView.css';
 import ratingStar from '../../media/rating-star.svg';
 import { useAuth } from '../../Auth/AuthContext';
 import Loading from '../Loading/Loading';
-// import cover from '../../media/tamplate-book-cover.jpg';
-// import SingleBook from '../SingleBook/SingleBook.js'
 
 const BorrowBook = (props) => {
     const [allBooks, setBooks] = useState([]);

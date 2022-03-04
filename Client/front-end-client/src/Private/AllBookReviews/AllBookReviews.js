@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useAuth } from '../../Auth/AuthContext.js';
-import './AllBookReviews.css';
 import SingleReview from '../SingleReview/SingleReview.js';
 import Loading from '../Loading/Loading.js';
 

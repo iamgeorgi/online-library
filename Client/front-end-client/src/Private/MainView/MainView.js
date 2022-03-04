@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './MainView.css';
 import ratingStar from '../../media/rating-star.svg';
 import Loading from '../Loading/Loading';
 import { withResource } from '../../Hooks/withResource';

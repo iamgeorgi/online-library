@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './Header.css';
 import logo from '../../media/book-logo.jpg';
 import { useAuth } from '../../Auth/AuthContext.js';
 import { useHistory } from 'react-router-dom';

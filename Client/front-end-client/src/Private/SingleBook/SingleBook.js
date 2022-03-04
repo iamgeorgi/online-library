@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../../Auth/AuthContext';
 import ratingStar from '../../media/rating-star.svg'
-import '../SingleBook/SingleBook.css'
 import Loading from '../Loading/Loading';
 
 const SingleBook = (props) => {
