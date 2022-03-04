@@ -34,6 +34,7 @@ const MainView = withResource(({ books1 }) => {
 
             <>
             <div className="wrapper">
+            <h1 className='bg-black'>Hello</h1>
                 {
                     books1 && books1.books.map((book) => {
                         console.log('book', book);

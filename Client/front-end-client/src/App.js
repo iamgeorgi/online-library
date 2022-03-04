@@ -20,7 +20,7 @@ const App = () => {
   const [searchInput, setSearchInput] = useState([]);
 
   return (
-    <div>
+    <div className="text-gray-600 font-body">
       <AuthContext.Provider value={{ user: user, setUser: setUser }} >
         <BrowserRouter>
           {true
