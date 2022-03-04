@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import './Register.css';
 
 const Register = ({ history }) => {
     const toggle = () => history.push('/session');

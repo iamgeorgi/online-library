@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './index.css';
 import Register from './Public/Register/Register.js';
 import Login from './Public/Login/Login.js';
 import Header from './Private/Header/Header.js';

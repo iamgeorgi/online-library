@@ -5,7 +5,6 @@ import { withResource } from '../../Hooks/withResource';
 import { BookItem } from './BookItem';
 
 const MainView = withResource(({ books1 }) => {
-    console.log('books1', books1);
     // const { books } = books1;
     // const [allBooks, setBooks] = useState([]);
     const [loading, setLoading] = useState(false);
